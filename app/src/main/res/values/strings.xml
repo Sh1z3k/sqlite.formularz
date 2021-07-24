@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="wydziały">
+        <item>Wszystkie</item>
+        <item>Nawigacyjny</item>
+        <item>Elektryczny</item>
+        <item>Mechaniczny</item>
+        <item>PiT</item>
+    </string-array>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity2"
+    android:id="@+id/simple_list_item_checked">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wybrany student"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/stZdjecie"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/srednia"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/wiek"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="30dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/usunRekord"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Usuń rekord"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista studentów"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"/>
+
+    <ListView
+        android:id="@+id/listV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"/>
+
+</LinearLayout>
